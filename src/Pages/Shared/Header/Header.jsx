@@ -5,7 +5,7 @@ const Header = () => {
     const navOptions = <>
         <Link to="/"><li>Home</li></Link>
         <Link to="/menu"><li>Our Menu</li></Link>
-        <Link to="/f"><li>Order Food</li></Link>
+        <Link to="/order"><li>Order Food</li></Link>
     </>
 
     return (

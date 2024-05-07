@@ -2,7 +2,7 @@
 const MenuCover = ({ img, title }) => {
     return (
         <div>
-            <div className="hero h-[700px]" style={{ backgroundImage: `url("${img}")` }}>
+            <div className="hero h-[650px]" style={{ backgroundImage: `url("${img}")` }}>
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content bg-black bg-opacity-40 mt-10">
                     <div className="max-w-md mt-10">

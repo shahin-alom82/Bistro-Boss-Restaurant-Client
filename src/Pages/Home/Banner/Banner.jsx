@@ -13,23 +13,23 @@ const Banner = () => {
     return (
         <div>
             <Carousel>
-                <div className='carousel w-full lg:h-[700px]  object-cover '>
+                <div className='carousel w-full lg:h-[650px]  object-cover '>
                     <img src={img1} />
                 </div>
-                <div className='carousel w-full lg:h-[700px]   object-cover'>
+                <div className='carousel w-full lg:h-[650px]    object-cover'>
                     <img src={img2} />
                 </div>
-                <div className='carousel w-full lg:h-[700px]   object-cover'>
+                <div className='carousel w-full lg:h-[650px]    object-cover'>
                     <img src={img3} />
                 </div>
 
-                <div className='carousel w-full lg:h-[700px]   object-cover'>
+                <div className='carousel w-full lg:h-[650px]   object-cover'>
                     <img src={img4} />
                 </div>
-                <div className='carousel w-full lg:h-[700px]   object-cover'>
+                <div className='carousel w-full lg:h-[650px]   object-cover'>
                     <img src={img5} />
                 </div>
-                <div className='carousel w-full lg:h-[700px]   object-cover'>
+                <div className='carousel w-full lg:h-[650px]   object-cover'>
                     <img src={img6} />
                 </div>
             </Carousel>
