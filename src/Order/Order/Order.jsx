@@ -5,7 +5,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { useState } from "react";
 import useMenu from "../../Hooks/useMenu";
-import FoodCard from "../../Components/FoodCard/FoodCard";
+import OrderTab from "../../Components/OrderTab/OrderTab";
 
 const Order = () => {
     const [menu] = useMenu();
@@ -32,19 +32,24 @@ const Order = () => {
                     <Tab>Pizza</Tab>
                     <Tab>Soup</Tab>
                     <Tab>Dessert</Tab>
-                    <Tab>Drinks</Tab>
+                    <Tab>Offered</Tab>
                 </TabList>
                 <TabPanel>
-                    <div className="grid grid-cols-1 lg:grid-cols-3 mt-20 gap-8">
-                        {
-                            salad.map(item => <FoodCard key={item._id} item={item}></FoodCard>)
-                        }
-                    </div>
+                    <OrderTab items={salad}></OrderTab>
                 </TabPanel>
-                <TabPanel></TabPanel>
-                <TabPanel></TabPanel>
-                <TabPanel></TabPanel>
-                <TabPanel></TabPanel>
+                <TabPanel>
+                    <OrderTab items={pizza}></OrderTab>
+                </TabPanel>
+                <TabPanel>
+                    <OrderTab items={soup}></OrderTab>
+                </TabPanel>
+                <TabPanel>
+                    <OrderTab items={dessert}></OrderTab>
+                </TabPanel>
+                <TabPanel>
+                    <OrderTab items={offered}></OrderTab>
+                </TabPanel>
+
             </Tabs>
 
         </div >
